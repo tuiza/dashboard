@@ -2,7 +2,7 @@ export const formatDate = (date) => {
     const fullDate = new Date(date);
 
     if(fullDate) {
-        return fullDate.toDateString("pt-BR", {
+        return fullDate.toLocaleDateString("pt-BR", {
             year:"numeric",
             month:"short",
             day: "numeric",
